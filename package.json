@@ -1,0 +1,22 @@
+{
+  "name": "ncode",
+  "version": "1.0.0",
+  "description": "Javascript Coderunner",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saudam-nisum-com/nCode.git"
+  },
+  "author": "shiva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saudam-nisum-com/nCode/issues"
+  },
+  "homepage": "https://github.com/saudam-nisum-com/nCode#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
