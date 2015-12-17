@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/saudam-nisum-com/nCode#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "mysql": "^2.10.0"
   }
 }
