@@ -1,3 +1,4 @@
+
 var express = require('express'),
     db = require('./db');
  
@@ -8,11 +9,15 @@ var express = require('express'),
      db.config.connect();
 
 
+var express = require('express');
+var app = express();
+var path = require('path');
+
 
 app.set('port', (process.env.PORT || 9999));
-app.use('/', express.static(__dirname));
+app.use('/', express.static(path.join(__dirname,'public')));
 app.get('/',function(req,res){
-	res.sendFile("index.html",{root:__dirname});
+	res.sendFile("index.html",{root:path.join(__dirname,"public/app/views")});
 });
 
 app.get('/addcode',function(request, response) {
