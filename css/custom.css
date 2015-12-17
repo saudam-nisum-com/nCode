@@ -1,0 +1,207 @@
+/*Boilerplate Styles*/
+  body {
+      padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+      font-family: corbel;
+      font-size: 16px;
+      font-weight: normal;
+  }
+  footer {
+      margin: 50px 0;
+  }
+  .contentBox{
+    border:1px solid black;
+  }
+  .parametersHeading{
+    border-bottom:1px solid #bbb;
+    font-size: 17px;
+    padding: 5px 0px 0px 20px;
+    height: 35px;
+  }
+  .title{
+    padding: 8px 8px 8px 22px !important;
+    height:45px;
+    background:rgb(230,230,230);       
+    font-size:18px;
+    font-weight:bold;
+    color:rgb(36,57,91);
+    margin: 18px !important;
+
+  }
+  .parameters{
+    margin:20px;
+    border :1px solid #bbb;
+  }
+  .tableHeader{
+    margin-bottom:20px;
+  }
+  .parameterKey{
+    font-weight:bold;        
+    padding-left: 20px;
+  }
+  .parameter{
+    width:100%;
+  }
+  .parameterValue{
+    display: inline-block;
+    width: 67%;
+  }
+  .apiText{
+  	margin:20px;  	
+  	border:1px solid #bbb;
+  	padding:15px;
+  }
+  .exampleHeading{
+    color:blue;
+  }
+  .header{
+    background-color: #337ab7;
+
+  }
+  .nav-link{
+    color: white !important;
+    font-size: 30px;
+  }
+
+  .paramList{
+    padding: 15px;
+  }
+  .apiButton{
+    padding-left:20px;
+  }
+  #emailForm{
+    margin-top: 15px;
+  }
+
+ /*End Boilerplate Styles*/
+
+
+/*Form validation styles */
+  
+.invalid-form .ux-error-class, .ux-error-generic, .ux-error-class{
+  color: #E11A2B;
+}
+
+.ux-error-field input, .ux-error-field select, .ux-error-field textarea {
+  border: 1px solid #E11A2B ;
+}
+
+ /*end Form validation styles */
+
+ /*Responsive overlay styles */
+.demoHeaders {
+        margin-top: 2em;
+      }
+      #dialog-link {
+        padding: .4em 1em .4em 20px;
+        text-decoration: none;
+        position: relative;
+      }
+      #dialog-link span.ui-icon {
+        margin: 0 5px 0 0;
+        position: absolute;
+        left: .2em;
+        top: 50%;
+        margin-top: -8px;
+      }
+      #icons {
+        margin: 0;
+        padding: 0;
+      }
+      #icons li {
+        margin: 2px;
+        position: relative;
+        padding: 4px 0;
+        cursor: pointer;
+        float: left;
+        list-style: none;
+      }
+      #icons span.ui-icon {
+        float: left;
+        margin: 0 4px;
+      }
+      .fakewindowcontain .ui-widget-overlay {
+        position: absolute;
+      }
+      select {
+        width: 200px;
+      }
+      .no-titlebar.ui-dialog .ui-dialog-titlebar {
+    display: none;
+}
+
+.no-title.ui-dialog .ui-dialog-title {
+    display: none;
+}
+
+.no-close-btn.ui-dialog .ui-dialog-titlebar-close{
+  display: none;
+}
+
+#responsiveOverlay{
+/*  margin:10px;*/
+}
+
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br{
+  border-radius: 1px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+.ui-dialog .ui-dialog-titlebar {
+  height: 50px;
+  padding-top: 15px;
+  background: #eaeaea;
+}
+
+
+.ui-widget-overlay{
+  background: #000 none repeat scroll 0 0;
+ opacity: 0.5;
+}
+
+.ui-widget-header{
+  background-color: transparent;
+  border: 0;
+}
+
+#dialog-link {
+    background: #eaeaea none repeat scroll 0 0;
+    box-sizing: border-box;
+    color: #000;
+    display: inline-block;
+    font-family: corbel;
+    font-size: 20px;
+    font-weight: 600;
+    height: 44px;
+    padding: 7px 0 0;
+    text-align: center;
+    width: 145px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close{
+  right: 1em;
+  width: 35px;
+  height: 35px;
+  background-image: url("../css/images/close_small.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+.ui-dialog-title{
+  color:#333;
+}
+
+.ui-dialog{
+  font-family: corbel;
+  font-weight: :normal;
+  font-size: 15px;
+}
+
+.form-control{
+  border-radius: none !important;
+}
+
+.ux-error-class{
+  margin:0 15px;
+ 
+}
+/* End responsive overlay styles*/
