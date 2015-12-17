@@ -4,7 +4,7 @@
   "description": "Javascript Coderunner",
   "main": "app.js",
   "scripts": {
-    "test": "npm start"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/saudam-nisum-com/nCode#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "path": "^0.12.7"
   }
 }
