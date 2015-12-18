@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 17, 2015 at 12:41 PM
+-- Generation Time: Dec 18, 2015 at 06:00 AM
 -- Server version: 5.1.53
 -- PHP Version: 5.3.4
 
@@ -35,5 +35,23 @@ CREATE TABLE IF NOT EXISTS `codershelf` (
 
 --
 -- Dumping data for table `codershelf`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registration`
+--
+
+CREATE TABLE IF NOT EXISTS `registration` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` int(11) NOT NULL,
+  `password` int(11) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `registration`
 --
 
