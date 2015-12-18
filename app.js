@@ -12,6 +12,7 @@ app.get('/', function(req, res) {
     });
 });
 
+//get the existing data
 app.get('/addcode', function(request, response) {
     var query = db.config.query('insert into codeshelf(temp_id,template_data,date,comments) values(' + "'" + temp_id + "'" + "," + "'" + template_data + "'" + "," + "'" + date + "'" + "," + "'" + comments + "'" + ');', function(req, res) {
         console.log(res);
@@ -20,6 +21,7 @@ app.get('/addcode', function(request, response) {
     console.log(query.sql);
 });
 
+//inserting new template_data
 app.post('/getcode', function(request, response) {
 
     var query = db.config.query("select * from codeshelf where temp_id =?", [temp_id], function(req, res) {
@@ -28,6 +30,7 @@ app.post('/getcode', function(request, response) {
     });
 });
 
+//updating the existing template_data
 app.put('/changes/:id', function(request, response) {
     console.log("inside put");
     var query = db.config.query('update codeshelf set template = ?,comments = ? where id = ?', [template, comments, id], function(req, res) {
@@ -37,6 +40,7 @@ app.put('/changes/:id', function(request, response) {
     console.log(query.sql);
 });
 
+//delete the existing template_data
 app.delete('/delete/:id', function(request, response) {
     console.log("inside delete");
     var ssid = request.params.id;
