@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 18, 2015 at 06:00 AM
+-- Generation Time: Dec 18, 2015 at 06:50 AM
 -- Server version: 5.1.53
 -- PHP Version: 5.3.4
 
@@ -27,7 +27,8 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 CREATE TABLE IF NOT EXISTS `codershelf` (
   `id` int(11) NOT NULL,
-  `temp_id` text NOT NULL,
+  `temp_id` varchar(15) NOT NULL,
+  `template_data` text NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `comments` text NOT NULL,
   PRIMARY KEY (`id`)
@@ -45,10 +46,10 @@ CREATE TABLE IF NOT EXISTS `codershelf` (
 --
 
 CREATE TABLE IF NOT EXISTS `registration` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` int(11) NOT NULL,
-  `password` int(11) NOT NULL,
-  PRIMARY KEY (`user_id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(15) NOT NULL,
+  `password` varchar(15) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
