@@ -40,11 +40,23 @@
             <div class="col-md-3">
                 <p class="lead">Recent Articles</p>
                 <div class="list-group">
-                   
+                    <a href="#" data-id="{{apiId}}" class="list-group-item">ffffff></a>
                 </div>
             </div>
             <div class="col-md-9">               
-                <div class="well"></div>
+                <div class="well">
+                  <h1 id="header">JavaScript Runner</h1>
+                    <div id="scratch">                      
+                      <p>
+                        <textarea id="scriptArea" cols="110" rows="16"></textarea>
+                      </p>
+                      <div id="buttonPanel">
+                        <button type="button" class="btn-primary" id="run" type="button">Run</button>
+                        <button type="button"class="btn-info" id="clearButton">Clear</button>
+                      </div>
+                    </div>
+                    <p id="footer"></p>                   
+                </div>
             </div>
             <div class="FormValidationContainerData" style="display:none">
               <div class="row">
@@ -148,53 +160,13 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="assets/js/lib/jquery.js"></script>
-    <script src="assets/js/lib/jquery-ui.js"></script>
+    <script src="assets/js/lib/jquery.js"></script>    
     <!-- Bootstrap Core JavaScript -->
-    <script src="assets/js/bootstrap.min.js"></script>    
-    <script src="assets/js/lib/responsive-dialog.js"></script>
-    <script src="assets/js/lib/handlebars-v4.0.5.js"></script>
-    <script src="assets/js/validator.js"></script>
-    <script src="assets/js/formValidation.js"></script>    
-    <script src="assets/js/addtobag.js"></script>
-    <script id="common-template" type="text/x-handlebars-template">       
-        <div id="{{formValidationContainerId}}">         
-            <div class="page-header title"><small>{{title}}</small></div>
-              <div class="table">
-                <div class="parameters">
-                    <div class="parametersHeading">{{parametersHeading}}</div>
-                    <div class="paramList">
-                      {{#each paramList}}
-                        <div class="row">
-                          <div class="col-sm-6 parameterKey" >{{@key}}:</div>
-                          <div class="col-sm-6">{{this}}</div>
-                        </div>                                            
-                      {{/each}} 
-                    </div>                                
-                </div>
-                <div class="row apiText">                  
-                  <div class="exampleHeading">{{exampleHeading}} </div>
-                  <div class="apiVariables">{{newLineSplit apiText}}</div>
-                  <div class="saCode">{{saCode}}</div>
-                  {{#if initCommand}}
-                    <div class="apiVariables">{{newLineSplit initCommand}}</div>
-                  {{/if}}
-                </div> 
-                
-              </div>
-              <div class="apiButton">
-                {{#if buttonId}}               
-                  <button type="button" class="btn {{buttonClass}}" id={{buttonId}}>{{buttonText}}
-                {{/if}}
-              </div>
-            <div class="{{containerClass}}"></div>
-          </div>     
-    </script> 
-    <script id="categories-template" type="text/x-handlebars-template">
-        {{#each this}}   
-            <a href="#" data-id="{{apiId}}" class="list-group-item"><small>{{@key}}</small></a>
-        {{/each}}            
-    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="app/controllers/mainCtrl.js"></script>
+    <script src="app/services/userService.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/app.js"></script>    
     <script src="assets/js/main.js"></script>
 </body>
 </html>
